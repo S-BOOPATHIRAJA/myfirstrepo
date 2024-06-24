@@ -1,0 +1,16 @@
+div {
+  width: 400px;
+  height: 200px;
+  background-color: aqua;
+  color: black;
+  transition: all 1s ease 1s;
+  position: relative;
+  top: 100px;
+  left: 100px;
+}
+div:hover {
+  background-color: black;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  transform: skew(20deg);
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input id="one" type="number" placeholder="enter number" />
+    <br />
+    <br />
+
+    <input id="two" type="number" placeholder="enter number" />
+    <br />
+    <br />
+    <br />
+
+    <button onclick="add()">ADD</button>
+    <button onclick="sub()">SUB</button>
+    <button onclick="mul()">MUl</button>
+    <button onclick="div()">DIV</button>
+    <br />
+    <br />
+    Result <input id="three" readonly type="number" />
+  </body>
+  <style>
+    #one {
+      border: 2px, black, solid;
+      margin-left: 50px;
+    }
+    #two {
+      margin-left: 50px;
+      border: 2px, black, solid;
+    }
+    body {
+      background-color: bisque;
+    }
+  </style>
+  <script>
+    function add() {
+      let ad = document.getElementById("one").value;
+      let num = document.getElementById("two").value;
+      let cal = parseInt(ad) + parseInt(num);
+      document.getElementById("three").innerText = cal;
+    }
+  </script>
+</html>

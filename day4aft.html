@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>calculate</h1>
+    <input type="text" id="one" placeholder="enter input 1" />
+    <br />
+    <input type="text" id="two" placeholder="enter input 2" />
+    <br />
+    <button onclick="cal()">Calculate</button>
+    <p id="cc"></p>
+  </body>
+  <script>
+    function cal() {
+      let a = document.getElementById("one").value;
+      let b = document.getElementById("two").value;
+
+      let ans = parseInt(a) + parseInt(b);
+
+      document.getElementById("cc").innerText = ans;
+    }
+  </script>
+</html>

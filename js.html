@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="basic.js"></script>
+  </head>
+  <body>
+    <h1 id="two"></h1>
+    <p id="one"></p>
+    <p class="one"></p>
+    <h1 id="one"></h1>
+    <p class="one"></p>
+    <p></p>
+  </body>
+  <script>
+    /* let push = "i will be succeed";
+    let push1 =
+      "-----------------------------------------------------------------------";
+    document.getElementsByClassName("one")[0].innerText = push;
+    document.getElementsByClassName("one")[1].innerText = push;
+
+    document.getElementsByTagName("p")[0].innerText = push1;
+    document.getElementsByTagName("p")[3].innerText = push1;*/
+    let animal = ["cat", "dog", "cow", "rat"];
+    document.querySelector("#two").innerHTML = "Animal";
+    for (let i in animal)
+      document.getElementsByTagName("p")[i].innerHTML = animal[i];
+
+    document.querySelectorAll(".one")[i].innerHTML = "cat";
+  </script>
+</html>
